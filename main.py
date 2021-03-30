@@ -1,16 +1,15 @@
 # Model 1: Button Based
 
 from kivy.app import App
-from kivy.core.window import Window
 from kivy.config import Config
-from kivy.uix.gridlayout import GridLayout
+from kivy.core.window import Window
+from kivy.properties import NumericProperty
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.textinput import TextInput
-from kivy.uix.label import Label
 from kivy.uix.button import Button
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.label import Label
 from kivy.uix.popup import Popup
 from kivy.uix.scrollview import ScrollView
-from kivy.properties import NumericProperty
 
 # Model 1: Button Based
 '''
@@ -19,7 +18,7 @@ from kivy.uix.behaviors import ButtonBehavior
 
 
 class MyButton(ButtonBehavior, Image):
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs): 
         super(MyButton, self).__init__(**kwargs)
         self.source = 'atlas://data/images/defaulttheme/checkbox_off'
 
