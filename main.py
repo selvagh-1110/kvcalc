@@ -33,6 +33,8 @@ class SampleApp(App):
     def build(self):
         return MyButton()
 '''
+
+
 # --------------------
 # Model 2: Calculator
 
@@ -100,8 +102,7 @@ class CalculatorApp(App):
 
 
 if __name__ == '__main__':
-    #textinput = TextInput(text='Hello world')
-    #print(textinput)
-    #SampleApp().run()
+    # textinput = TextInput(text='Hello world')
+    # print(textinput)
+    # SampleApp().run()
     CalculatorApp().run()
-
